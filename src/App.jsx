@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import Paper from './pages/Paper'
 import Syllabus from './pages/Syllabus';
 import Timetable from './pages/Timetable';
+import ContactUs from './pages/ContactUs'
 import Bca from './pages/Bca';
 import Bba from './pages/Bba';
 import Mca from './pages/Mca';
@@ -31,6 +32,7 @@ function App() {
       <Route path='/bba' element={<Bba/>}></Route>
       <Route path='/mca' element={<Mca/>}></Route>
       <Route path='/mba' element={<Mba/>}></Route>
+      <Route path='/contact' element={<ContactUs/>}></Route>
      </Routes>
      {/* <Section/> */}
      <Footer/>
