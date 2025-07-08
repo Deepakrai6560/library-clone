@@ -1,0 +1,162 @@
+.library-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.library-section .left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.library-section .left h2 {
+  font-size: 28px;
+  color: #002b5b;
+  margin-bottom: 1rem;
+}
+
+.library-section .left p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.library-section .left button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.library-section .right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.library-section .right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  
+}
+
+/* Slideshow */
+.slideshow-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.slideshow-image.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
+
+/* Bottom Section */
+.bottom-part {
+  padding-top: 10px;
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+.bottom-part h2 {
+  color: #002b5b;
+}
+
+.container-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  background-color: #102a43;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.container-bottom a {
+  text-decoration: none;
+  width: 100%;
+  max-width: 240px;
+  height: 140px;
+  display: block;
+  
+}
+
+/* Flip Card Styles */
+.flip-card {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.flip-card-front {
+  background-color: #0d3b66;
+}
+
+.flip-card-back {
+  background-color: #00bcd4;
+  transform: rotateY(180deg);
+}
+
+/* Footer */
+.footer {
+  background-color: hsl(212, 89%, 25%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer h4 {
+  font-size: medium;
+}

@@ -1,0 +1,54 @@
+/* Add this to Index.css and import it in your component */
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002b5b; /* Deep navy blue */
+  color: white;
+  padding: 0.6rem 1.5rem;
+  font-size: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mail a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mail a:hover {
+  color: #f4a300; /* Yellow-orange */
+}
+
+.center-textArea {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  flex: 1;
+  color: #f4f4f4;
+}
+
+.social-media-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media-links a {
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media-links a:hover {
+  color: #f4a300;
+  transform: scale(1.1);
+}
